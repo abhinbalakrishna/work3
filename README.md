@@ -124,6 +124,17 @@ start Astro. When Astro reports its local URL, the app opens it in the browser
 canvas automatically. The menu also provides static build and type-check
 commands for on-demand validation.
 
+## Coding standards
+
+Repository coding standards are maintained in [`.github/instructions/`](.github/instructions/).
+They cover Astro component contracts, Drizzle/Node SQLite data access, styling,
+unit tests, and Playwright tests. In particular:
+
+- Comments explain intent, constraints, or non-obvious decisions rather than restating code.
+- Exported functions in `db/` and `src/lib/` use TSDoc/JSDoc for their purpose, parameters, and return value.
+- Reusable `.astro` components document their `Props` interface.
+- TypeScript follows the repository's formatting conventions and ESLint checks module-boundary types, quotes, and semicolons.
+
 ## License 
 
 This project is licensed under the terms of the MIT open source license. Please refer to the [LICENSE](./LICENSE) for the full terms.
